@@ -1,0 +1,22 @@
+.step {
+    display: none;
+  }
+  .step.active {
+    display: block;
+  }
+  /* Background Gradient */
+  body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+  }
+  /* Form Opacity */
+  .form-container {
+    background: rgba(255, 255, 255, 0.4); /* 40% opacity */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+  }
+  /* Navbar Hamburger Menu */
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-menu.active {
+    display: block;
+  }
