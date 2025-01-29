@@ -34,5 +34,134 @@
       </div>
     </div>
   </nav>
+   <!-- Form Container -->
+   <div class="form-container p-8 rounded-lg shadow-lg w-full max-w-md mt-16">
+    <h2 class="text-2xl font-bold mb-6 text-center text-white">Registration Form</h2>
+    <form id="multiStepForm">
+      <!-- Step 1: Personal Details -->
+      <div class="step active" id="step1">
+        <div class="mb-4">
+          <label class="block text-white text-sm font-bold mb-2" for="name">
+            Full Name
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition duration-300 hover:border-blue-500"
+            id="name"
+            type="text"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block text-white text-sm font-bold mb-2" for="email">
+            Email
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition duration-300 hover:border-blue-500"
+            id="email"
+            type="email"
+            placeholder="Your Email Address"
+            required
+          />
+        </div>
+        <div class="flex justify-end">
+          <button
+            type="button"
+            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105"
+            onclick="nextStep(2)"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Contact Details -->
+      <div class="step" id="step2">
+        <div class="mb-4">
+          <label class="block text-white text-sm font-bold mb-2" for="phone">
+            Phone Number
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition duration-300 hover:border-blue-500"
+            id="phone"
+            type="tel"
+            placeholder="+1234567890"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block text-white text-sm font-bold mb-2" for="address">
+            Address
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition duration-300 hover:border-blue-500"
+            id="address"
+            type="text"
+            placeholder="123 Main St, City, Country"
+            required
+          />
+        </div>
+        <div class="flex justify-between">
+          <button
+            type="button"
+            class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105"
+            onclick="prevStep(1)"
+          >
+            Previous
+          </button>
+          <button
+            type="button"
+            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105"
+            onclick="nextStep(3)"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 3: Additional Details -->
+      <div class="step" id="step3">
+        <div class="mb-4">
+          <label class="block text-white text-sm font-bold mb-2" for="dob">
+            Date of Birth
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition duration-300 hover:border-blue-500"
+            id="dob"
+            type="date"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label class="block text-white text-sm font-bold mb-2" for="password">
+            Password
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition duration-300 hover:border-blue-500"
+            id="password"
+            type="password"
+            placeholder="********"
+            required
+          />
+        </div>
+        <div class="flex justify-between">
+          <button
+            type="button"
+            class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105"
+            onclick="prevStep(2)"
+          >
+            Previous
+          </button>
+          <button
+            type="submit"
+            class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
