@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="flex flex-col items-center justify-center min-h-screen">
-    
+    <!-- Navbar -->
+  <nav class="w-full bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg fixed top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-white text-2xl font-bold">Reg-Form</div>
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-white hover:text-gray-200">Home</a>
+          <a href="#" class="text-white hover:text-gray-200">About</a>
+          <a href="#" class="text-white hover:text-gray-200">Contact</a>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="navbar-menu md:hidden">
+        <a href="#" class="block text-white py-2 hover:bg-white hover:bg-opacity-10">Home</a>
+        <a href="#" class="block text-white py-2 hover:bg-white hover:bg-opacity-10">About</a>
+        <a href="#" class="block text-white py-2 hover:bg-white hover:bg-opacity-10">Contact</a>
+      </div>
+    </div>
+  </nav>
 </body>
 </html>
